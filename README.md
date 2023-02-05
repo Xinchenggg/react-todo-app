@@ -1,3 +1,9 @@
+# React Todo List Application
+
+This is a simple application made with react.
+User can filter completed or uncomplete item with dropdown menu.
+Local storage is used to preserve the value.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
