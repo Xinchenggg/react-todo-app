@@ -1,8 +1,13 @@
 # React Todo List Application
 
-This is a simple application made with react.
-User can filter completed or uncomplete item with dropdown menu.
+This is a simple application made with react.\
+User can filter completed or uncomplete item with dropdown menu.\
 Local storage is used to preserve the value.
+
+## TODO of the Todo
+- [ ] Input string validation
+- [ ] Add edit button to each item
+- [ ] Add deadline function
 
 # Getting Started with Create React App
 
