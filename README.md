@@ -5,7 +5,8 @@ User can filter completed or uncomplete item with dropdown menu.\
 Local storage is used to preserve the value.
 
 ## TODO of the Todo
-- [ ] Input string validation
+- [x] Input string validation
+    - [ ] Update alert style
 - [ ] Add edit button to each item
 - [ ] Add deadline function
 

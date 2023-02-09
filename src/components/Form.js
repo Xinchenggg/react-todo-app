@@ -9,22 +9,18 @@ function Form({ inputText, setInputText, todos, setTodos, setStatus }) {
 
 	const submitTodoHandler = (e) => {
 		e.preventDefault();
-		setTodos([
-			...todos,
-			{ text: inputText, completed: false, id: Date.now() },
-		]);
-		setInputText("");
 
-		// TODO_1: Check if input string is empty
-		// if (inputText === "") {
-		// 	console.log("empty");
-		// } else {
-		// 	setTodos([
-		// 		...todos,
-		// 		{ text: inputText, completed: false, id: Date.now() },
-		// 	]);
-		// 	setInputText("");
-		// }
+		// TODO_1.1: Update alert style
+		if (inputText === "") {
+			alert('Empty input!');
+		} else {
+			setTodos([
+				...todos,
+				{ text: inputText, completed: false, id: Date.now() },
+			]);
+			setInputText("");
+		}
+		document.getElementById("add-todo").focus();
 	};
 
 	const statusHandler = (e) => {
@@ -35,6 +31,7 @@ function Form({ inputText, setInputText, todos, setTodos, setStatus }) {
 	return (
 		<form>
 			<input
+				id="add-todo"
 				className="todo-input"
 				type="text"
 				value={inputText}
